@@ -4,8 +4,8 @@ import { Config } from "@wdio/sync";
 export const config: Config = {
     runner: 'local',
     specs: [
-        //'./test/**/*.ts'
-        './test/createAccount.ts'
+        './test/**/*.ts'
+        //'./test/createAccount.ts'
     ],
     hostname: process.env.SELENIUM_HUB_HOST ?? 'localhost',
     path: '/wd/hub',
@@ -15,7 +15,7 @@ export const config: Config = {
     }],
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'info',
-    baseUrl: 'http://ip-5236.sunline.net.ua:38015/',
+    baseUrl: 'https://www.ringcentral.com/',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
